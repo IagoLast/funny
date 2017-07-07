@@ -1,0 +1,236 @@
+.main {
+    background-repeat: no-repeat;
+    background-color: #ffdf49;
+    background-image: url("../assets/images/bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 2em;
+    display: block;
+    header {
+        position: relative;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        i.i-menu {
+            cursor: pointer;
+            animation: fade-in ease 1s;
+            position: relative;
+            margin-right: 1em;
+        }
+        div.name {
+            color: white;
+            background: black;
+            font-size: 1.14em;
+            font-weight: 900;
+            padding: 0 .3em;
+            letter-spacing: 3px;
+            transition: font-size .3s;
+        }
+        nav {
+            display: none;
+        }
+        .info {
+            display: none;
+        }
+    }
+    .bananas {
+        display: none;
+    }
+    aside.menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #1a1a1a;
+        z-index: 6;
+        padding: 3em 0;
+        &.ng-hide-add,
+        &.ng-hide-remove {
+            transition: opacity 1s;
+        }
+        &.ng-hide {
+            opacity: 0;
+        }
+        i {
+            cursor: pointer;
+            color: white;
+            text-align: center;
+            display: block;
+            &.i-close {
+                position: absolute;
+                top: 2em;
+                right: 2em;
+                z-index: 7;
+            }
+        }
+        a {
+            position: relative;
+            animation: text-slide-top .4s;
+            color: white;
+            font-size: 2em;
+            font-weight: 900;
+            display: block;
+            text-align: center;
+            padding: 20px 0;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .main {
+        background-size: contain;
+        header {
+            justify-content: space-between;
+            i.i-menu {
+                display: none;
+            }
+            div.name {
+                color: white;
+                background: black;
+                font-size: 1.5em;
+                font-weight: 900;
+                padding: 0 .3em;
+                letter-spacing: 3px;
+            }
+            nav {
+                display: flex;
+                animation: fade-in ease 2s;
+                a {
+                    margin-right: 30px;
+                    color: #1a1a1a;
+                    font-size: 1em;
+                    font-weight: bold;
+                    border-bottom: 2px solid #ffdf49;
+                    &:hover {
+                        border-bottom: 2px solid #1e1e1e;
+                    }
+                    &.i-email {
+                        &:hover {
+                            border-bottom: 2px solid #ffdf49;
+                            opacity: .8;
+                        }
+                    }
+                }
+            }
+            .info {
+                animation: fade-in ease 2s;
+                display: block;
+                position: absolute;
+                top: calc(44px + 1em);
+                left: 0;
+                max-height: 30px;
+                div {
+                    font-size: 1.3em;
+                    font-weight: bolder;
+                    display: block;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+                a {
+                    opacity: 0;
+                    img {
+                        position: relative;
+                        height: 30px;
+                        margin-right: 5px;
+                    }
+                    animation: fade-in ease 1s;
+                    animation-fill-mode: forwards;
+                    &:last-child {
+                        animation: fade-in ease 1s;
+                        animation-delay: .2s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .main {
+        background-image: none;
+        header {
+            div.name {
+                font-size: 2em;
+            }
+        }
+        .bananas {
+            display: flex;
+            position: relative;
+            top: -90px;
+            justify-content: center;
+            width: 75%;
+            margin: auto;
+            transition: width .6s;
+            .b1,
+            .b2,
+            .b3 {
+                position: relative;
+                display: inline-block;
+                width: 33%;
+                img {
+                  cursor: pointer;
+                  width: 100%;
+                }
+            }
+            .b1 {
+                .bot {
+                    top: -0.6px;
+                }
+                .top,
+                .bot {
+                    position: absolute;
+                }
+                &.animate {
+                    .bot {
+                        animation: banana-slice 1s linear;
+                    }
+                }
+            }
+            .b2 {
+                z-index: 2;
+                position: relative;
+                top: -50px;
+                &.animate {
+
+                    transform-origin: center bottom;
+                    animation: b3-bounce ease 1s;
+                }
+            }
+            .b3 {
+                position: relative;
+                left: -100px;
+                &.animate {
+                    transform-origin: 50% 0;
+                    animation: banana-swing 1.2s;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+  .main {
+    .bananas {
+      width: 70%;
+      .b3 {
+        left: -150px;
+
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .main {
+    .bananas {
+      width: 60%;
+      .b3 {
+        left: -200px;
+
+      }
+    }
+  }
+}

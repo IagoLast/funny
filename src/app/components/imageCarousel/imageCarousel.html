@@ -1,0 +1,9 @@
+<div>
+  <div ng-if="vm.visible > 0" ng-click="vm.visible = vm.visible - 1" class="carousel-prev">
+    <i class="i-left"></i>
+  </div>
+  <img ng-if="$index === vm.visible" ng-repeat="img in vm.images" ng-src="{{vm.source + img + '.png'}}">
+  <div ng-if="vm.visible < vm.images.length -1" ng-click="vm.visible = vm.visible + 1" class="carousel-next">
+    <i class="i-right"></i>
+  </div>
+</div>

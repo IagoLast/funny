@@ -1,0 +1,212 @@
+.project {
+        display: block;
+        position: relative;
+        nav,
+        footer {
+                padding: 1em;
+                position: relative;
+                z-index: 3;
+                display: flex;
+                justify-content: space-between;
+                color: #1a1a1a;
+                font-size: .9em;
+                font-weight: bolder;
+                background-color: white;
+                text-align: center;
+        }
+        nav {
+                strong {
+                        &:before {
+                                display: none;
+                        }
+                        &:after {
+                                display: none;
+                        }
+                }
+                :first-child {
+                        visibility: hidden;
+                        &:before {
+                                visibility: visible;
+                                font-family: 'icomoon';
+                                content: "\e900";
+                        }
+                }
+                :last-child {
+                        strong {
+                                display: inline-block;
+                                transition: transform .5s;
+                                font-size: 1em;
+                                margin-right: 5px;
+                                &.rotated {
+                                        transform: rotate(45deg);
+                                }
+                        }
+                        visibility: hidden;
+                        &:after {
+                                vertical-align: bottom;
+                                visibility: visible;
+                                font-family: 'icomoon';
+                                content: "\e904";
+                        }
+                }
+                .name {
+                        position: absolute;
+                        left: 1em;
+                        right: 1em;
+                        text-align: center;
+                        z-index: -1;
+                        cursor: default;
+                }
+        }
+        .info-wrapper {
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 2;
+                padding: 3em 4em;
+                background-color: white;
+                position: absolute;
+                &.ng-enter {
+                        animation: info-slide-top 1s ease;
+                        animation-fill-mode: forwards;
+                }
+                &.ng-leave {
+                        animation: info-slide-top 1s ease;
+                        animation-direction: reverse;
+                }
+                .info {
+                        display: block;
+                        article {
+                                .tag {
+                                        margin-top: 40px;
+                                        padding: 3px 10px;
+                                        font-size: 1em;
+                                        background: black;
+                                        color: white;
+                                        display: inline-block;
+                                }
+                                p {
+                                        margin-bottom: 0;
+                                        font-weight: 500;
+                                        color: #555;
+                                        font-size: 1.1em;
+                                        line-height: 1.5em;
+                                        letter-spacing: 1px;
+                                }
+                                a {
+                                        color: #327beb;
+                                }
+                        }
+                }
+                .divider {
+                        margin-top: 35px;
+                        font-weight: bolder;
+                        font-size: 1.2em;
+                }
+        }
+        content.media {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                margin: auto;
+                padding: 0 .5em;
+        }
+        .l,
+        .m,
+        image-carousel {
+                padding: .5em;
+                display: inline-block;
+                transition: width .6s;
+                &.l {
+                        width: 100%;
+                }
+                &.m,
+                image-carousel {
+                        width: 50%;
+                }
+        }
+        footer {
+                padding: 2em 1em;
+                z-index: 1;
+        }
+}
+
+@media screen and (min-width: 500px) {
+        .project {
+                nav,
+                footer {
+                        padding: 2em;
+                        font-size: 1em;
+                }
+                nav {
+                        :first-child {
+                                visibility: visible;
+                                &:before {
+                                        display: none;
+                                }
+                        }
+                        :last-child {
+                                visibility: visible;
+                                &:after {
+                                        display: none;
+                                }
+                        }
+                }
+                .info-wrapper {
+                        &.ng-enter {
+                                animation: info-slide-top .8s ease-out;
+                                animation-fill-mode: forwards;
+                        }
+                        &.ng-leave {
+                                animation: info-slide-top 1s;
+                                animation-direction: reverse;
+                        }
+                        .info {
+                                article {
+                                        p {
+                                                font-weight: 100;
+                                        }
+                                }
+                        }
+                }
+                footer {
+                        padding: 0 2em 2em 2em;
+                }
+                content.media {
+                        padding: 0 1em;
+                }
+                .l,
+                .m,
+                image-carousel {
+                        padding: 0 1em 2em 1em;
+                }
+        }
+}
+
+@media (min-width: 700px) {
+        .project {
+                .info-wrapper {
+                        .info {
+                                display: flex;
+                                article {
+                                        padding-right: 35px;
+                                        flex: 1;
+                                }
+                        }
+                        .l,
+                        .m,
+                        image-carousel {
+                                padding: 1em;
+                        }
+                        .divider {
+                                padding: .3em .5em;
+                                display: flex;
+                                background-color: black;
+                                color: white;
+                                justify-content: space-between;
+                                font-size: 1em;
+                                font-weight: 100;
+                        }
+                }
+        }
+}

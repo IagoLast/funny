@@ -1,0 +1,10 @@
+@keyframes title-fade {
+  from {
+    top: 100px;
+    opacity: 0;
+  }
+  to {
+    top: inherit;
+    opacity: 1;
+  }
+}

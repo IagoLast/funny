@@ -1,0 +1,37 @@
+<content class="main">
+    <header>
+        <i class="i-menu" ng-click="displayMenu = true"></i>
+        <div class="name">ESTEFANIA CASAL</div>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a class="i-email" href="mailto:fannycasal.c@gmail.com"></a>
+        </nav>
+        <div class="info">
+            <div>Portfolio</div>
+            <a target="_blank" href="https://dribbble.com/stephcas"><img class="social" src="assets/images/d.svg"></a>
+            <a target="_blank" href="https://fannycasal.tumblr.com"><img class="social" src="assets/images/t.svg"></a>
+        </div>
+    </header>
+    <section class="bananas">
+        <div class="b1">
+            <img class="top" src="assets/images/b1t.png" />
+            <img class="bot" src="assets/images/b1b.png" />
+        </div>
+        <div class="b2">
+            <img src="assets/images/b2.png" />
+        </div>
+        <div class="b3">
+            <img src="assets/images/b3.png" />
+        </div>
+    </section>
+    <aside ng-show="displayMenu" class="menu">
+        <i class="i-close" ng-click="displayMenu = false"></i>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="mailto:fannycasal.c@gmail.com">Send Email</a>
+        <i class="i-view"></i>
+        <a target="_blank" href="https://dribbble.com/stephcas">Dribble</a>
+        <a target="_blank" href="https://fannycasal.tumblr.com">Tumblr</a>
+    </aside>
+</content>
