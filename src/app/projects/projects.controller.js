@@ -23,11 +23,11 @@
     });
 
     vm.projects = [{
-      title: 'Weather App',
-      subtitle: 'An honest, funny and different weather app',
-      img: 'assets/projects/weather-app/1.png',
-      link: '#/projects',
-      year: 2016,
+      title: 'Trebo',
+      subtitle: 'Different way to check the weather ',
+      img: 'assets/projects/trebo/1.png',
+      link: '#/projects/trebo',
+      year: 2017,
       class: 'wea'
     }, {
       title: 'Vidahora Branding',

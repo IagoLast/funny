@@ -37,9 +37,6 @@
       .when('/projects/vida-ahora-branding', {
         templateUrl: 'app/projects/vida-ahora-branding.html'
       })
-      .when('/projects/vida-ahora-webapp', {
-        templateUrl: 'app/projects/vida-ahora-webapp.html'
-      })
       .when('/projects/vigo-timetravel', {
         templateUrl: 'app/projects/vigo-timetravel.html'
       })
@@ -51,6 +48,9 @@
       })
       .when('/projects/samsung', {
         templateUrl: 'app/projects/samsung.html'
+      })
+      .when('/projects/trebo', {
+        templateUrl: 'app/projects/trebo.html'
       })
       .when('/about', {
         templateUrl: 'app/about/about.html',
