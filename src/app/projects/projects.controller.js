@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -9,15 +9,15 @@
     var vm = this;
 
 
-    vm.unregisterFn = $rootScope.$on("$routeChangeSuccess", function() {
+    vm.unregisterFn = $rootScope.$on("$routeChangeSuccess", function () {
       $window.scroll(0, 0);
     });
 
-    vm.timer = $timeout(function() {
+    vm.timer = $timeout(function () {
       $rootScope.mainClass = 'fade';
     }, 1000);
 
-    $rootScope.$on('$destroy', function() {
+    $rootScope.$on('$destroy', function () {
       $timeout.cancel(vm.timer);
       vm.unregisterFn();
     });
@@ -85,6 +85,14 @@
       link: '#/projects/manual',
       year: 2014,
       class: 'man'
+    },
+    {
+      title: 'Camper',
+      subtitle: 'Apps design',
+      img: 'assets/projects/camper/1.png',
+      link: '#/projects/camper',
+      year: 2018,
+      class: 'camper'
     }]
   }
 

@@ -46,6 +46,9 @@
       .when('/projects/iberia', {
         templateUrl: 'app/projects/iberia.html'
       })
+      .when('/projects/camper', {
+        templateUrl: 'app/projects/camper.html'
+      })
       .when('/about', {
         templateUrl: 'app/about/about.html',
         controller: 'AboutController',

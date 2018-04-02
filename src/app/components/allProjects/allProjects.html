@@ -13,10 +13,6 @@
     <div class="projects-wrapper">
         <div class="projects">
             <div ng-repeat="project in vm.projects">
-                <a class="year" ng-if="project.year !== vm.projects[$index-1].year">
-                    <div class="number">{{project.year}}</div>
-                    <div class="text"></div>
-                </a>
                 <a ng-mouseover="$parent.vm.project = project" href="{{project.link}}">
                     <div class="number">0{{$index + 1}}</div>
                     <div class="text">{{project.title}}</div>
