@@ -34,9 +34,6 @@
       .when('/projects/vigo-timetravel', {
         templateUrl: 'app/projects/vigo-timetravel.html'
       })
-      .when('/projects/iberia', {
-        templateUrl: 'app/projects/iberia.html'
-      })
       .when('/projects/camper', {
         templateUrl: 'app/projects/camper.html'
       })
