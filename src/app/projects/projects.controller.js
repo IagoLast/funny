@@ -93,7 +93,16 @@
       link: '#/projects/camper',
       year: 2018,
       class: 'camper'
-    }]
+    },
+    {
+      title: 'Samsung',
+      subtitle: 'In-store customer experience ',
+      img: 'assets/projects/samsung/1.png',
+      link: '#/projects/samsung',
+      year: 2017,
+      class: 'samsung'
+    }
+  ]
   }
 
 
