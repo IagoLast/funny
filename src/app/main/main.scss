@@ -172,7 +172,6 @@
                 display: inline-block;
                 width: 33%;
                 img {
-                  cursor: pointer;
                   width: 100%;
                 }
             }
@@ -186,7 +185,8 @@
                 }
                 &.animate {
                     .bot {
-                        animation: banana-slice 1s linear;
+                        animation: banana-slice 2s linear;
+                        animation-fill-mode: forwards;
                     }
                 }
             }
