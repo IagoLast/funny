@@ -25,12 +25,6 @@
       .when('/projects/e-aditivos', {
         templateUrl: 'app/projects/e-aditivos.html'
       })
-      .when('/projects/hearty', {
-        templateUrl: 'app/projects/hearty.html'
-      })
-      .when('/projects/huarte', {
-        templateUrl: 'app/projects/huarte.html'
-      })
       .when('/projects/manual', {
         templateUrl: 'app/projects/manual.html'
       })

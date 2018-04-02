@@ -45,14 +45,9 @@
       link: '#/projects/vigo-timetravel',
       year: 2015,
       class: 'vtt'
-    }, {
-      title: 'Huarte International',
-      subtitle: 'Law firm Visual Identity',
-      img: 'assets/projects/huarte/1.png',
-      link: '#/projects/huarte',
-      year: 2015,
-      class: 'hua'
-    }, {
+    },
+
+    {
       title: 'E-aditivos',
       subtitle: 'Interactive list of food aditives',
       img: 'assets/projects/e-aditivos/1.png',
@@ -66,14 +61,8 @@
       link: '#/projects/iberia',
       year: 2015,
       class: 'ibe'
-    }, {
-      title: 'Hearthy m-health',
-      subtitle: 'm-Health system',
-      img: 'assets/projects/hearty/1.png',
-      link: '#/projects/hearty',
-      year: 2014,
-      class: 'hea'
-    }, {
+    },
+    {
       title: 'Editorial design handbook',
       subtitle: 'Beginner\'s guide to editorial design',
       img: 'assets/projects/manual/1.png',
