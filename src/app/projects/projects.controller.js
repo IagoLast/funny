@@ -22,70 +22,65 @@
       vm.unregisterFn();
     });
 
-    vm.projects = [{
-      title: 'Trebo',
-      subtitle: 'Different way to check the weather ',
-      img: 'assets/projects/trebo/1.png',
-      link: '#/projects/trebo',
-      year: 2017,
-      class: 'wea'
-    },
-    {
-      title: 'Vidahora',
-      subtitle: 'Branding + web + app',
-      img: 'assets/projects/vidahora/1.gif',
-      link: '#/projects/vida-ahora',
-      year: 2016,
-      class: 'vab'
-    },
-    {
-      title: 'Vigo timetravel',
-      subtitle: 'App to visit the past and present',
-      img: 'assets/projects/vigo-timetravel/1.png',
-      link: '#/projects/vigo-timetravel',
-      year: 2015,
-      class: 'vtt'
-    },
+    vm.projects = [
+      {
+        title: 'Samsung',
+        subtitle: 'In-store customer experience ',
+        img: 'assets/projects/samsung/1.png',
+        link: '#/projects/samsung',
+        year: 2017,
+        class: 'samsung'
+      },
+      {
+        title: 'Trebo',
+        subtitle: 'Different way to check the weather ',
+        img: 'assets/projects/trebo/1.png',
+        link: '#/projects/trebo',
+        year: 2017,
+        class: 'wea'
+      },
+      {
+        title: 'Camper',
+        subtitle: 'Apps design',
+        img: 'assets/projects/camper/1.png',
+        link: '#/projects/camper',
+        year: 2018,
+        class: 'camper'
+      },
 
-    {
-      title: 'E-aditivos',
-      subtitle: 'Interactive list of food aditives',
-      img: 'assets/projects/e-aditivos/1.png',
-      link: '#/projects/e-aditivos',
-      year: 2015,
-      class: 'adi'
-    }, {
-      title: 'Iberia Express',
-      subtitle: 'Ilustration for inflight magazine',
-      img: 'assets/projects/iberia/1.png',
-      link: '#/projects/iberia',
-      year: 2015,
-      class: 'ibe'
-    },
-    {
-      title: 'Editorial design handbook',
-      subtitle: 'Beginner\'s guide to editorial design',
-      img: 'assets/projects/manual/1.png',
-      link: '#/projects/manual',
-      year: 2014,
-      class: 'man'
-    },
-    {
-      title: 'Camper',
-      subtitle: 'Apps design',
-      img: 'assets/projects/camper/1.png',
-      link: '#/projects/camper',
-      year: 2018,
-      class: 'camper'
-    },
-    {
-      title: 'Samsung',
-      subtitle: 'In-store customer experience ',
-      img: 'assets/projects/samsung/1.png',
-      link: '#/projects/samsung',
-      year: 2017,
-      class: 'samsung'
-    }
+      {
+        title: 'Vidahora',
+        subtitle: 'Branding + web + app',
+        img: 'assets/projects/vidahora/1.gif',
+        link: '#/projects/vida-ahora',
+        year: 2016,
+        class: 'vab'
+      },
+      {
+        title: 'Vigo timetravel',
+        subtitle: 'App to visit the past and present',
+        img: 'assets/projects/vigo-timetravel/1.png',
+        link: '#/projects/vigo-timetravel',
+        year: 2015,
+        class: 'vtt'
+      },
+
+      {
+        title: 'E-aditivos',
+        subtitle: 'Interactive list of food aditives',
+        img: 'assets/projects/e-aditivos/1.png',
+        link: '#/projects/e-aditivos',
+        year: 2015,
+        class: 'adi'
+      }, 
+      {
+        title: 'Editorial design handbook',
+        subtitle: 'Beginner\'s guide to editorial design',
+        img: 'assets/projects/manual/1.png',
+        link: '#/projects/manual',
+        year: 2014,
+        class: 'man'
+      },
     ]
   }
 
