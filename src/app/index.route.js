@@ -52,6 +52,9 @@
       .when('/projects/trebo', {
         templateUrl: 'app/projects/trebo.html'
       })
+      .when('/projects/vida-ahora', {
+        templateUrl: 'app/projects/vida-ahora.html'
+      })
       .when('/about', {
         templateUrl: 'app/about/about.html',
         controller: 'AboutController',

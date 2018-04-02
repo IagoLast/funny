@@ -29,21 +29,16 @@
       link: '#/projects/trebo',
       year: 2017,
       class: 'wea'
-    }, {
-      title: 'Vidahora Branding',
-      subtitle: 'Branding and full visual identity',
-      img: 'assets/projects/vida-ahora-branding/thumb.png',
-      link: '#/projects/vida-ahora-branding',
+    },
+    {
+      title: 'Vidahora',
+      subtitle: 'Branding + web + app',
+      img: 'assets/projects/vidahora/1.gif',
+      link: '#/projects/vida-ahora',
       year: 2016,
       class: 'vab'
-    }, {
-      title: 'Wellness Program',
-      subtitle: 'App & Web',
-      img: 'assets/projects/vida-ahora-webapp/1.png',
-      link: '#/projects/vida-ahora-webapp',
-      year: 2016,
-      class: 'vaw'
-    }, {
+    },
+    {
       title: 'Vigo timetravel',
       subtitle: 'App to visit the past and present',
       img: 'assets/projects/vigo-timetravel/1.png',
@@ -102,7 +97,7 @@
       year: 2017,
       class: 'samsung'
     }
-  ]
+    ]
   }
 
 
