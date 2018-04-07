@@ -19,6 +19,10 @@
     var b2 = angular.element($window.document.querySelector('.b2 img'));
     var b3 = angular.element($window.document.querySelector('.b3 img'));
 
+    animateBanana(b1);
+    animateBanana(b2);
+    animateBanana(b3);
+
     $timeout(function () {
       var parent = angular.element(b2.parent());
       parent.addClass('animate');
@@ -50,7 +54,15 @@
       });
     }
 
-
+    function animateBanana(banana) {
+      banana.on('click', function () {
+        var parent = angular.element(banana.parent());
+        parent.addClass('animate');
+        $timeout(function () {
+          parent.removeClass('animate');
+        }, 1000);
+      });
+    }
   }
 
 
