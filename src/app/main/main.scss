@@ -118,14 +118,14 @@
                 display: block;
                 top: calc(50% - (44px + 1em));
                 left: 35px;
-                max-height: 50px;
+                max-height: 40px;
                 display: flex;
                 flex-direction: column;
                 a {
                     opacity: 0;
                     img {
                         position: relative;
-                        height: 50px;
+                        height: 40px;
                         margin-right: 5px;
                         margin-bottom: 15px;
                     }
