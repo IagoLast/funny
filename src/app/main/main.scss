@@ -113,26 +113,21 @@
                 }
             }
             .info {
+                position: fixed;
                 animation: fade-in ease 2s;
                 display: block;
-                position: absolute;
-                top: calc(44px + 1em);
-                left: 0;
-                max-height: 30px;
-                div {
-                    font-size: 1.3em;
-                    font-weight: bolder;
-                    display: block;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    margin-bottom: 10px;
-                }
+                top: calc(50% - (44px + 1em));
+                left: 35px;
+                max-height: 50px;
+                display: flex;
+                flex-direction: column;
                 a {
                     opacity: 0;
                     img {
                         position: relative;
-                        height: 30px;
+                        height: 50px;
                         margin-right: 5px;
+                        margin-bottom: 15px;
                     }
                     animation: fade-in ease 1s;
                     animation-fill-mode: forwards;
