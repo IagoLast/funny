@@ -28,10 +28,10 @@
 }
 
 @font-face {
-    font-family: 'Fanny';
+    font-family: 'fanny';
     font-style: normal;
     font-weight: 400;
-    src: local('/assets/fonts/fanny'), format("opentype");
+    src: url('/assets/fonts/fanny.otf');
 }
 
 html,

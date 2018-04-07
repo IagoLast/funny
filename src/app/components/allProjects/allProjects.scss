@@ -27,11 +27,12 @@ all-projects {
                 justify-content: center;
                 flex-direction: column;
                 a {
-                        font-family: 'Fanny';
                         &:first-child {
                                 font-size: 1.6em;
                                 font-weight: 500;
+                                font-family: inherit;
                         }
+                        font-family: 'Fanny';
                         max-width: 50%;
                         position: relative;
                         font-size: 3em;
