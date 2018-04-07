@@ -27,6 +27,13 @@
     src: local('/assets/fonts/AvenirNextLTPro-Bold'), format("opentype");
 }
 
+@font-face {
+    font-family: 'Fanny';
+    font-style: normal;
+    font-weight: 400;
+    src: local('/assets/fonts/fanny'), format("opentype");
+}
+
 html,
 body {
     position: absolute;
