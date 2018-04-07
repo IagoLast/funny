@@ -44,10 +44,23 @@ all-projects {
                         animation-fill-mode: forwards;
                 }
         }
+        .media {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                width: auto;
+                min-height: 100%;
+                min-width: 100%;
+                
+        }
         nav {
                 overflow-y: scroll;
                 height: 100%;
                 right: -100%;
+                div {
+                        .number {}
+                }
         }
 }
 
@@ -58,32 +71,7 @@ all-projects {
                 right: 2em;
                 height: calc(100% - 87px);
                 width: calc(100% - 4em);
-
-                .project-info{
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: 50% 50%;
-                        &.adi {
-                                background-image: url("/assets/projects/e-aditivos/1.png");
-                        }
-                        &.man {
-                                background-image: url("/assets/projects/manual/1.png");
-                        }
-                        &.vab {
-                                background-image: url("/assets/projects/vidahora/1.png");
-                        }
-                        &.vtt {
-                                background-image: url("/assets/projects/vigo-timetravel/1.png");
-                        }
-                        &.wea {
-                                background-image: url("/assets/projects/trebo/1.png");
-                        }
-                        &.camper {
-                                background-image: url("/assets/projects/camper/1.png");
-                        }
-                        &.samsung {
-                                background-image: url("/assets/projects/samsung/1.png");
-                        }
+                .media {
                 }
                 nav {
                         position: absolute;

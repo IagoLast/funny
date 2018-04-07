@@ -1,6 +1,8 @@
 <div class="media-wrapper">
-    <!-- <img ng-if="vm.project.thumb !== 'assets/projects/vida-ahora-webapp/1.png'" class="media" ng-src="{{vm.project.img}}"> -->
-    <div class="project-info" ng-class="vm.project.class">
+    <img width="1209" height="680" ng-if="vm.project.thumb !== 'assets/projects/vida-ahora-webapp/1.png'" class="media" ng-src="{{vm.project.img}}">
+    <video ng-if="vm.project.thumb === 'assets/projects/vida-ahora-webapp/1.png'" class="media" autoplay src="assets/projects/vida-ahora-webapp/video.f4v">
+    </video>
+    <div class="project-info">
         <a ng-href="{{vm.project.link}}">{{vm.project.title}} <i class="i-view"></i></a>
         <a ng-href="{{vm.project.link}}">{{vm.project.subtitle}}</a>
     </div>
