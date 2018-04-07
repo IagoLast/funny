@@ -52,6 +52,15 @@
   }
 }
 
+@keyframes banana-slice-reverse {
+  from {
+    top: 200%;
+  }
+  to {
+    top: -0.6px;
+  }
+}
+
 @keyframes banana-swing {
   15% {
     transform: rotate(10deg);

@@ -19,7 +19,7 @@
     var b2 = angular.element($window.document.querySelector('.b2 img'));
     var b3 = angular.element($window.document.querySelector('.b3 img'));
 
-    animateBanana(b1);
+    animateSplit();
     animateBanana(b2);
     animateBanana(b3);
 
@@ -61,6 +61,24 @@
         $timeout(function () {
           parent.removeClass('animate');
         }, 1000);
+      });
+    }
+
+    function animateSplit() {
+      var banana = angular.element($window.document.querySelector('.b1'));
+      banana.on('click', function () {
+        if (!banana.hasClass('animate')) {
+          banana.addClass('animate');
+          return;
+        }
+
+        if (banana.hasClass('animate')) {
+          banana.addClass('reverse');
+          $timeout(function () {
+            banana.removeClass('animate');
+            banana.removeClass('reverse');
+          }, 600);
+        }
       });
     }
   }
