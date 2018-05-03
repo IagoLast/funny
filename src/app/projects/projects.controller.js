@@ -24,6 +24,15 @@
 
     vm.projects = [
       {
+        title: 'Pantone Portugal',
+        subtitle: 'Visual chromatic experiment ',
+        img: 'assets/projects/pantone/1.png',
+        thumb: 'assets/projects/pantone/thumb.png',
+        link: '#/projects/pantone',
+        year: 2017,
+        class: 'pantone'
+      },
+      {
         title: 'Samsung',
         subtitle: 'In-store customer experience ',
         img: 'assets/projects/samsung/1.png',
